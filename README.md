@@ -26,6 +26,9 @@ FRONTEND_TESTING.md       frontend test plan and execution ledger
 
 The project, contract file and contract class are all named `PrereqLock`.
 
+- Repository: https://github.com/kinhdoanhcam-art/PrereqLock
+- Live dApp: https://prereq-lock-eosin.vercel.app
+
 ## Contract identity
 
 ```text
@@ -33,15 +36,15 @@ Network: GenLayer StudioNet (chain 61999)
 Version: 1.1
 Source: contract/PrereqLock.py
 SHA-256: 1e47fd114f12c4d22d515ef4af4435082269d5e1524110371e3eec111320ab55
-Contract address: 0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
-Deploy transaction: 0xd3c6b51d1534ce493393920d0aecc6d74e5c8fe7e834620afc01600deea7bdb3
+Contract address: 0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
+Deploy transaction: 0xb02fd55c9394cdd94dcb6af66364b2a66e94a067db9d66fe43c38299ad0e94e1
 Creator: 0x3065E31B1D993d7C0D59E6786844cBa56780B2d3
 ```
 
-Earlier deployments belong to the pre-review contract and are not evidence for v1.1; their addresses are intentionally omitted from this v1.1 package.
+This is the current Project deployment of the source hash above. StudioNet reported `FINALIZED`, GenVM `SUCCESS` and consensus `Accepted` for the deployment.
 
-- Explorer: https://explorer-studio.genlayer.com/address/0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
-- Deploy transaction: https://explorer-studio.genlayer.com/tx/0xd3c6b51d1534ce493393920d0aecc6d74e5c8fe7e834620afc01600deea7bdb3
+- Explorer: https://explorer-studio.genlayer.com/address/0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
+- Deploy transaction: https://explorer-studio.genlayer.com/tx/0xb02fd55c9394cdd94dcb6af66364b2a66e94a067db9d66fe43c38299ad0e94e1
 - Observed deployment result: `FINALIZED`, GenVM `SUCCESS`, consensus `Accepted`.
 
 ## Roles
@@ -124,7 +127,7 @@ Vite production build: PASS
 Python syntax compilation: PASS
 ```
 
-These offline results are separate from StudioNet evidence. The K1-K5 runtime semantic suite, creator/actor authorization flow, replay protection and two-attempt bound were also exercised on the v1.1 deployment. Full transaction hashes and observed postconditions are recorded in `TESTING.md`.
+These offline results are separate from StudioNet evidence. The K1-K5 runtime semantic suite, creator/actor authorization flow, replay protection and two-attempt bound were exercised on a previous deployment of the same v1.1 source hash. The current address has a verified deployment; fresh application-flow revalidation is still pending. Full historical transaction hashes and scope labels are recorded in `TESTING.md`.
 
 ## Frontend configuration
 
@@ -135,7 +138,7 @@ cp .env.example .env.local
 The deployed v1.1 address is already configured:
 
 ```text
-VITE_CONTRACT_ADDRESS=0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
+VITE_CONTRACT_ADDRESS=0xa81d04e3d7cc2f6e696666453b1ddd679b88c430
 VITE_RPC_PATH=/api/rpc
 ```
 

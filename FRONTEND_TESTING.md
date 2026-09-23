@@ -10,7 +10,7 @@ npm run typecheck: PASS
 npm run build: PASS
 ```
 
-The production build completed with a non-blocking bundle-size warning. No Vercel deployment has been tested for v1.1.
+The production build completed with a non-blocking bundle-size warning. The Vercel UI, wallet connection and same-origin RPC path were exercised during deployment setup; the full state flow against the current contract address remains pending.
 
 ## Manual procedure
 
@@ -67,6 +67,6 @@ Verify:
 | Environment | URL/build | Wallet flow | State flow | Rollback display | Responsive UI | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Local production build | `dist/` | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
-| Vercel production | NOT DEPLOYED | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Vercel production | `https://prereq-lock-eosin.vercel.app` | PARTIAL | NOT RUN on current address | PARTIAL | PASS desktop | NOT RUN |
 
 Do not change a row to `PASS` without recording date, URL, wallet roles and transaction hashes in `TESTING.md`.

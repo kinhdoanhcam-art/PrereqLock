@@ -12,20 +12,20 @@ Network: GenLayer StudioNet (61999)
 Version: 1.1
 Source: contract/PrereqLock.py
 SHA-256: 1e47fd114f12c4d22d515ef4af4435082269d5e1524110371e3eec111320ab55
-Address: 0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
-Deploy TX: 0xd3c6b51d1534ce493393920d0aecc6d74e5c8fe7e834620afc01600deea7bdb3
+Address: 0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
+Deploy TX: 0xb02fd55c9394cdd94dcb6af66364b2a66e94a067db9d66fe43c38299ad0e94e1
 ```
 
 ## Links
 
 ```text
-GitHub: NOT PUBLISHED
-Live dApp: NOT DEPLOYED
-Explorer: https://explorer-studio.genlayer.com/address/0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
+GitHub: https://github.com/kinhdoanhcam-art/PrereqLock
+Live dApp: https://prereq-lock-eosin.vercel.app
+Explorer: https://explorer-studio.genlayer.com/address/0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
 ```
 
 ## Verification state
 
-Offline source checks, Unicode parity, `npm ci`, typecheck, production build, the StudioNet v1.1 deployment, K1-K5 semantic classification, split-role execution, replay protection and the two-attempt bound are `PASS`. Full hashes are recorded in `TESTING.md`.
+Offline source checks, Unicode parity, `npm ci`, typecheck, production build and the current StudioNet v1.1 deployment are `PASS`. K1-K5 semantic classification, split-role execution, replay protection and the two-attempt bound passed on a previous deployment of the same source hash. Full hashes and scope labels are recorded in `TESTING.md`.
 
-Vercel production integration remains `NOT RUN`; add the final GitHub and live dApp URLs above after publishing.
+The Vercel UI and wallet/RPC path were exercised during deployment setup. A fresh full state-flow test against the current address remains `NOT RUN`.

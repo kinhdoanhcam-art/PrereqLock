@@ -8,16 +8,17 @@ Only an actually observed result may be marked `PASS`. A submitted, accepted or 
 Network: GenLayer StudioNet (61999)
 Contract: PrereqLock
 Source SHA-256: 1e47fd114f12c4d22d515ef4af4435082269d5e1524110371e3eec111320ab55
-Address: 0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
-Deploy TX: 0xd3c6b51d1534ce493393920d0aecc6d74e5c8fe7e834620afc01600deea7bdb3
-Explorer: https://explorer-studio.genlayer.com/address/0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
-Deploy TX explorer: https://explorer-studio.genlayer.com/tx/0xd3c6b51d1534ce493393920d0aecc6d74e5c8fe7e834620afc01600deea7bdb3
+Address: 0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
+Deploy TX: 0xb02fd55c9394cdd94dcb6af66364b2a66e94a067db9d66fe43c38299ad0e94e1
+Explorer: https://explorer-studio.genlayer.com/address/0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
+Deploy TX explorer: https://explorer-studio.genlayer.com/tx/0xb02fd55c9394cdd94dcb6af66364b2a66e94a067db9d66fe43c38299ad0e94e1
 Creator wallet: 0x3065E31B1D993d7C0D59E6786844cBa56780B2d3
-Actor wallet: 0x86895976a0c43A9Be69b1DEd865e9726eE80BA77
+Planned production actor wallet: 0x5a52d040581a76e2c032542855d31480f2ea7097
+Historical runtime-suite actor: 0x86895976a0c43A9Be69b1DEd865e9726eE80BA77
 Outsider wallet: NOT RECORDED
 ```
 
-The old deployments are intentionally excluded because their bytecode predates v1.1.
+The current deployment uses the same verified v1.1 source hash as the historical runtime suite below. Those historical rows remain evidence for that byte-identical source, but they are not represented as transactions against the current address.
 
 Deployment observation on 2026-09-23:
 
@@ -25,7 +26,7 @@ Deployment observation on 2026-09-23:
 Transaction status: FINALIZED
 GenVM result: SUCCESS
 Consensus result: Accepted
-Exact postcondition: contract created at 0x75fa20dBD3b19E36736FDe62bDF49710571d4e81
+Exact postcondition: contract created at 0xa81d04e3D7CC2f6e696666453b1ddD679b88c430
 Result: PASS
 ```
 
@@ -33,7 +34,7 @@ Result: PASS
 
 | Gate | Result | Evidence |
 | --- | --- | --- |
-| StudioNet v1.1 deployment | PASS | Deploy TX `0xd3c6b51d1534ce493393920d0aecc6d74e5c8fe7e834620afc01600deea7bdb3`; `FINALIZED`, GenVM `SUCCESS`, consensus `Accepted` |
+| Current StudioNet v1.1 deployment | PASS | Deploy TX `0xb02fd55c9394cdd94dcb6af66364b2a66e94a067db9d66fe43c38299ad0e94e1`; `FINALIZED`, GenVM `SUCCESS`, consensus `Accepted` |
 | Python syntax | PASS | `python3 -m py_compile contract/PrereqLock.py` |
 | Contract source invariants | PASS | `python3 tests/verify_contract_source.py` |
 | K1-K5 shortcut resistance | PASS | `python3 tests/verify_kill_suite.py` |
@@ -44,7 +45,9 @@ Result: PASS
 
 Execution date: 2026-09-23 UTC.
 
-## Semantic kill suite
+## Historical semantic kill suite — byte-identical v1.1 deployment
+
+The following runtime transactions were executed against the previous v1.1 address `0x75fa20dBD3b19E36736FDe62bDF49710571d4e81`, before StudioNet stopped serving that contract state. They are retained as historical regression evidence for the unchanged source hash, not as proof of state at the current address.
 
 Use the same labels for every case:
 
