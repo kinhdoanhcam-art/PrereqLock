@@ -101,7 +101,6 @@ footer {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
   min-width: 0;
 }
 
@@ -111,63 +110,6 @@ footer {
   height: 52px;
   object-fit: contain;
   object-position: left center;
-}
-
-.brand-subtitle {
-  display: block;
-  padding-left: 12px;
-  border-left: 1px solid rgba(151, 174, 198, 0.14);
-  color: #7f91a7;
-  font-size: 10px;
-  line-height: 1.35;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-.genlayer-badge {
-  height: 38px;
-  padding: 0 10px 0 7px;
-  border: 1px solid rgba(151, 174, 198, 0.16);
-  background: rgba(13, 24, 37, 0.82);
-  color: #b7c5d5;
-  border-radius: 11px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  font-weight: 650;
-}
-
-.genlayer-logo-box,
-.eyebrow-logo-box {
-  display: inline-grid;
-  place-items: center;
-  overflow: hidden;
-  background: #ffffff;
-}
-
-.genlayer-logo-box {
-  width: 25px;
-  height: 25px;
-  border-radius: 7px;
-}
-
-.genlayer-logo {
-  width: 25px;
-  height: 25px;
-  object-fit: cover;
-}
-
-.eyebrow-logo-box {
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-}
-
-.eyebrow-genlayer-logo {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
 }
 
 .top-actions {
@@ -223,7 +165,6 @@ footer {
   padding-bottom: 34px;
 }
 
-.eyebrow,
 .section-kicker {
   display: inline-flex;
   align-items: center;
@@ -902,8 +843,6 @@ footer div {
     padding: 10px 16px;
   }
 
-  .brand-subtitle,
-  .genlayer-badge span,
   .network-pill {
     display: none;
   }
@@ -911,12 +850,6 @@ footer div {
   .project-logo {
     width: 158px;
     height: 42px;
-  }
-
-  .genlayer-badge {
-    width: 38px;
-    padding: 0;
-    justify-content: center;
   }
 
   .page {
