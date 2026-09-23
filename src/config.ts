@@ -1,7 +1,9 @@
-export const CONTRACT_ADDRESS = (
+import { getAddress } from "viem";
+
+export const CONTRACT_ADDRESS = getAddress(
   import.meta.env.VITE_CONTRACT_ADDRESS ??
-  "0xa81d04e3d7cc2f6e696666453b1ddd679b88c430"
-) as `0x${string}`;
+    "0xa81d04e3D7CC2f6e696666453b1ddD679b88c430"
+);
 
 export const RPC_PATH = import.meta.env.VITE_RPC_PATH ?? "/api/rpc";
 

@@ -43,7 +43,7 @@ export async function getGate(gateId: string): Promise<GateRecord> {
     address: CONTRACT_ADDRESS,
     functionName: "get_gate",
     args: [gateId],
-    stateStatus: "accepted",
+    transactionHashVariant: "latest-final",
   })) as GateRecord;
 }
 
@@ -56,7 +56,7 @@ export async function getAttempts(
     address: CONTRACT_ADDRESS,
     functionName: "get_attempts",
     args: [gateId, offset, limit],
-    stateStatus: "accepted",
+    transactionHashVariant: "latest-final",
   })) as AttemptRecord[];
 }
 
