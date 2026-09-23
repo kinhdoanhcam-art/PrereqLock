@@ -544,20 +544,9 @@ function App() {
             src="/prereqlock-logo.png"
             alt="PrereqLock"
           />
-          <span className="brand-subtitle">Semantic Prerequisite Gate</span>
         </div>
 
         <div className="top-actions">
-          <div className="genlayer-badge" title="Built on GenLayer">
-            <span className="genlayer-logo-box">
-              <img
-                src="/genlayer-logo-official.png"
-                alt="GenLayer"
-                className="genlayer-logo"
-              />
-            </span>
-            <span>Built on GenLayer</span>
-          </div>
           <a
             className="network-pill"
             href={EXPLORER_URL}
@@ -591,16 +580,6 @@ function App() {
       <main className="page">
         <section className="hero">
           <div>
-            <div className="eyebrow">
-              <span className="eyebrow-logo-box">
-                <img
-                  src="/genlayer-logo-official.png"
-                  alt=""
-                  className="eyebrow-genlayer-logo"
-                />
-              </span>
-              Intelligent Contract · GenLayer
-            </div>
             <h1>
               A prerequisite should be
               <span> required, not merely possible.</span>
