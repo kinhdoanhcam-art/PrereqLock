@@ -877,7 +877,7 @@ function App() {
                         className="secondary-button"
                         onClick={recordCondition}
                         disabled={
-                          !isActor ||
+                          !isCreator ||
                           !gate.edge_installed ||
                           gate.condition_met ||
                           gate.action_done ||
@@ -894,7 +894,7 @@ function App() {
                         className="primary-button"
                         onClick={performAction}
                         disabled={
-                          !isCreator ||
+                          !isActor ||
                           !gate.edge_installed ||
                           !gate.condition_met ||
                           gate.action_done ||
