@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.local
+.vercel
+.DS_Store
+*.tsbuildinfo
+__pycache__/
+CLAUDE_REVIEW_REQUEST.md
+ORIGINAL_CLAUDE_PRECODE_REVIEW.md
